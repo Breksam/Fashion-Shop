@@ -278,7 +278,7 @@
     <footer class="footer-sm-space mt-5">
         <div class="main-footer">
             <div class="container">
-                <div class="row gy-4">
+                <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="footer-contact">
                             <div class="brand-logo">
@@ -287,6 +287,19 @@
                                         alt="logo">
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row gy-4">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="footer-contact">
+                            {{-- <div class="brand-logo">
+                                <a href="{{ route('app.index') }}" class="footer-logo float-start">
+                                    <img src="{{ asset('assets/images/logo.png') }}" class="f-logo img-fluid blur-up lazyload"
+                                        alt="logo">
+                                </a>
+                            </div> --}}
                             <ul class="contact-lists" style="clear:both;">
                                 <li>
                                     <span><b>phone:</b> <span class="font-light"> +1 0000000000</span></span>
@@ -397,7 +410,7 @@
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <p class="mb-0 font-dark">© 2023, Fashion Shop.</p>
+                        <p class="mb-0 font-dark">© 2024, Fashion Shop.</p>
                     </div>
                 </div>
             </div>

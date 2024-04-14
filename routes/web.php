@@ -77,7 +77,7 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/location/create','create')->name('location.create');
         Route::post('/location/store','store')->name('location.store');
         Route::put('/location/update/{id}','update')->name('location.update');
-        Route::post('/location/edit/{id}','edit')->name('location.edit');
+        Route::get('/location/edit/{id}','edit')->name('location.edit');
         Route::delete('/location/destroy/{id}','destroy')->name('location.destroy');
     });
 });

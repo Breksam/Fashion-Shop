@@ -352,7 +352,7 @@
 
 
                                                     <div class="button">
-                                                        <form  class=" fw-bold ms-auto" action="{{ route('location.edit', ['id' => $location->id]) }}" method="post">
+                                                        <form  class=" fw-bold ms-auto" action="{{ route('location.edit', ['id' => $location->id]) }}" method="get">
                                                             @csrf
                                                             <button style="border-radius: 4px !important" type="submit" class="btn btn-success btn-sm">Edit</button>
                                                         </form>
