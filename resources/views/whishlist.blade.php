@@ -101,13 +101,13 @@
                             @foreach ($wishlists as $wishlist)
                                 <tr>
                                     <td>
-                                        <a href="details.php">
+                                        <a href="{{ route('shop.productDetails',['slug'=> $wishlist->product->slug]) }}">
                                             <img src="{{ asset('assets/images/fashion/product/front') }}/{{ $wishlist->product->image }}"
                                                 class=" blur-up lazyload" alt="">
                                         </a>
                                     </td>
                                     <td>
-                                        <a href="details.php" class="font-light">{{ $wishlist->product->name }}</a>
+                                        <a href="{{ route('shop.productDetails',['slug'=> $wishlist->product->slug]) }}" class="font-light">{{ $wishlist->product->name }}</a>
                                     </td>
                                     <td>
                                         <p class="fw-bold">${{ $wishlist->product->sale_price ? $wishlist->product->sale_price : $wishlist->product->regular_price }}</p>
